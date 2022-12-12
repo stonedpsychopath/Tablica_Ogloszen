@@ -29,7 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-AUTH_USER_MODEL = 'myapp.CustomUser'
+AUTH_USER_MODEL = 'tablica_ogloszen.CustomUser'
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
