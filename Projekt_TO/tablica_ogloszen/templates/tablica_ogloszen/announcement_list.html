@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <th>użytkownicy</th>
+        </tr>
+   {% for AbstractUser in announcement %}
+       <tr>
+                <td>{{ AbstractUser.id }}</td>
+                <td><a href="{% url 'tablica_ogloszen:question_detail' AbstractUser %}">
+                {{ abstractUser.first_name }}</a>
+                </td>
+                <td>{{abstractUser.last_name}}</td>
+                <td>{{ abstractUser.username }}</td>
+                <td>{{ abstractUser.phone_Number }}</td>
+                <td>{{ abstractUser.email }}</td>
+                <td>{{ abstractUser.is_staff }}</td>
+                <td>{{ abstractUser.is_active }}</td>
+                <td>{{ abstractUser.is_superuser }}</td>
+
+       </tr>
+   {% endfor %}
+    </table>
+</div>
+</body>
+</html>

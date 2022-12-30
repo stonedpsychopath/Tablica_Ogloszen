@@ -30,7 +30,7 @@ class AnnouncementAdmin(admin.ModelAdmin):
 
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['first_name','last_name','username','email','is_staff','is_active','is_superuser']
+    list_display = ['first_name','last_name','username','email','is_staff','is_active','is_superuser','phoneNumber']
     list_filter = ('first_name','last_name','username','email','is_staff','is_active','is_superuser')
     search_fields = ('first_name','last_name','username','email','is_staff','is_active','is_superuser')
 

@@ -1,0 +1,23 @@
+<h1>Cześć, Jacek</h1>
+{#{{ user.is_authenticated}}#}
+{{ user }}
+{{ user.firstname }}
+
+{% if user.is_authenticated %}
+    <p>Cześć, {{ user }}</p>
+{% else %}
+    <p>Nie jesteś zalogowany mordo</p>
+{% endif %}
+
+<button><a href="{% url 'tablica_ogloszen:question_list'%}">Ogłoszenia</a></button>
+<button>hej</button>
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>Cześć, Jacek</h1>#}
+{#</body>#}
+{#</html>#}

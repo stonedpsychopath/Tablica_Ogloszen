@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tablica_ogloszen/nice.css' %}">
+<h1>Kategoria: {{ announcement.categories }}</h1>
+<h1>Tytuł: {{ announcement.name }}</h1>
+<h1>Cena: {{ announcement.price }}zł</h1>
+<h1>Opis: {{ announcement.description }}</h1>
+
+<ul>
+{% for categories in announcement.categories_set.all %}
+    <ul>
+       <li>{{ categories.name }} ({{ categories.name }}) </li>
+    </ul>
+{% endfor %}
+</ul>
+<ul>
+    <h2>Komentarze: </h2>
+{% for comments in announcement.comments_set.all %}
+    <ul>
+       <li>{{ comments.name    }} ---------Polubienia:   {{ comments.likes }}</li>
+    </ul>
+{% endfor %}
+</ul>

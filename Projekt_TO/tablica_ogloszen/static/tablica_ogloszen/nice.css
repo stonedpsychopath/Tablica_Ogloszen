@@ -1,0 +1,38 @@
+ *{
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: lightskyblue;
+            font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+            font-weight: bold;
+        }
+a{
+     color: blue;
+
+ }
+
+table, h1,h2{
+    border-radius: 15px;
+    width: 100%;
+  }
+  td, th, h1 {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+
+  table, th, td{
+    border: 2px solid black;
+  }
+
+.cat, .name, .price, .description, h1{
+    background-color: lightseagreen;
+}
+th, li {
+    background-color: mediumseagreen;
+}
+li {
+    border: 2px solid black;
+    text-align: left;
+    padding: 10px;
+  }
