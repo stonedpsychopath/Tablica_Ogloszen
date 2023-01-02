@@ -1,0 +1,82 @@
+/*--------------------------------------------CAłA STRONA--------------------------------------------*/
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: lightskyblue;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+/*--------------------------------------------LINK--------------------------------------------*/
+a{
+    color: white;
+    background-color: transparent;
+}
+/*--------------------------------------------TABELKA--------------------------------------------*/
+table, h1,h2,h3{
+    border-radius: 15px;
+    width: 100%;
+    background-color: aquamarine;
+}
+td, th, h1,h3 {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+table, th, td{
+    border: 2px solid black;
+}
+.cat, .name, .price, .description, h1{
+    background-color: lightseagreen;
+}
+th, li, h3 {
+    background-color: mediumseagreen;
+}
+li {
+    border: 2px solid black;
+    text-align: left;
+    padding: 10px;
+}
+
+/*--------------------------------------------PRZYCISKI--------------------------------------------*/
+.block {
+    color: white;
+    font-size:40px;
+    text-decoration:none;
+    background-color: green;
+    width: 100%;
+    height: 60px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.block2 {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    background-color: green;
+    width: 100%;
+    height: 60px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.but3{
+    background-color: green;
+}
+/*--------------------------------------------PRZYCISKI-ANIMACJA--------------------------------------------*/
+.block:hover{
+    background-color: palegreen;
+}
+.block2:hover{
+    background-color: palegreen;
+}
+.but3:hover{
+    background-color: palegreen;
+}
+p{
+    text-align: center;
+}

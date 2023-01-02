@@ -1,0 +1,32 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tablica_ogloszen/lol.css' %}">
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div>
+    <h1>TABLICA OGŁOSZEŃ</h1>
+    <table>
+        <tr class="solid">
+            <th>Kategoria ogłoszenia</th>
+            <th>Treść</th>
+            <th>Opis</th>
+            <th>Cena</th>
+        </tr>
+   {% for announcement in announcements %}
+       <tr>
+                <td class="cat">{{ announcement.categories }}</td>
+                <td class="name"><button class="but3"><a href="{% url 'tablica_ogloszen:question_detail' announcement.id %}" style="text-decoration:none;">
+                {{ announcement.name }}</a></button>
+                </td>
+                <td class="description">{{ announcement.description }}</td>
+                <td class="price">{{announcement.price}}zł</td>
+       </tr>
+   {% endfor %}
+    </table>
+    <h3>Użytkownicy</h3>
+</div>
+</body>
+</html>
+
